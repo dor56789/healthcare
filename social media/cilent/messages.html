@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Messages between doctors on Doctor Network.">
+    <title>Doctor Network - Messages</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Doctor Network Logo" />
+                <h1><a href="index.html">Doctor Network</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="messages">
+            <h2>Messages</h2>
+            <div class="message" data-aos="fade-right">
+                <div class="message-header">
+                    <h3>Dr. John Smith</h3>
+                </div>
+                <p>Hey, can you share the research paper on AI in cardiology?</p>
+                <div class="message-footer">
+                    <button class="btn reply-btn"><i class="fas fa-reply"></i> Reply</button>
+                </div>
+            </div>
+            <div class="message" data-aos="fade-right">
+                <div class="message-header">
+                    <h3>Dr. Jane Doe</h3>
+                </div>
+                <p>Sure! I'll send it over shortly.</p>
+                <div class="message-footer">
+                    <button class="btn reply-btn"><i class="fas fa-reply"></i> Reply</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Doctor Network. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+        });
+    </script>
+</body>
+</html>

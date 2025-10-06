@@ -1,0 +1,236 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+}
+
+.logo img {
+    max-height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+.feed, .profile, .messages {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.post, .message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post:last-child, .message:last-child {
+    margin-bottom: 0;
+}
+
+.post-image img, .profile-pic {
+    border-radius: 8px;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.post-content, .message-content {
+    flex: 1;
+}
+
+.post-header h3, .message-header h3 {
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.post-footer, .message-footer {
+    margin-top: 15px;
+}
+
+.btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0055cc;
+}
+
+.like-btn {
+    margin-right: 10px;
+}
+
+/* Profile Page */
+.profile-header {
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-content h3 {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .feed, .profile, .messages {
+        padding: 15px;
+    }
+
+    .post, .message {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .post-image img, .profile-pic {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .post-image img, .profile-pic {
+        width: 150px;
+    }
+
+    nav ul li {
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        width: 85%;
+    }
+
+    .post-image img, .profile-pic {
+        width: 200px;
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hover Effects */
+.btn {
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0055cc;
+}
+
+.post-image img, .profile-pic {
+    transition: transform 0.3s ease;
+}
+
+.post-image img:hover, .profile-pic:hover {
+    transform: scale(1.05);
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+.post:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
